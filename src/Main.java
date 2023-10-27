@@ -5,6 +5,7 @@ public class Main {
         st.add("x", new Symbol("x", "identifier", "INT"));
         st.add("y", new Symbol("y", "identifier", "REAL"));
         st.add("5", new Symbol("5", "constant", "INT"));
+        st.add("x", new Symbol("x", "identifier", "REAL"));
 
         System.out.println(st.get("x"));
         System.out.println(st.get("y"));

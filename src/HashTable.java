@@ -12,6 +12,7 @@ public class HashTable<T> implements SymbolTable<T> {
 
     @Override
     public void add(String key, T value) {
+        if (find(key)) return;
         int idx = hash(key);
         if (table[idx] == null) table[idx] = new ArrayList<>();
         table[idx].add(new Entry<>(key, value));
